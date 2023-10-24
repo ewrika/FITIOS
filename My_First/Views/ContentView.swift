@@ -15,6 +15,7 @@ struct ContentView: View {
                 ExerciseView(index: number)
             }
             Text("Exercise2")
+                .padding()
                 .tabItem { Text("Welcome2") }
         }.padding()
             .tabViewStyle(PageTabViewStyle())
