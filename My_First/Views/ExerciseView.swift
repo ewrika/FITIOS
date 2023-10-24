@@ -6,16 +6,31 @@
 //
 
 import SwiftUI
+import AVKit
+
+
 
 struct ExerciseView: View {
+    
+    var exercise: Exercise {
+        Exercise.exercises[index]
+    }
+    
     let index : Int
-    let videoNames = ["squat","step-up","burpee","sun-salute"]
-    let exerciseNames = ["Squat","Step up","Burpee","Sun salute"]
     var body: some View {
-        Text(exerciseNames[index])
+        VStack {
+            HeaderView(exerciseName: exercise.exerciseName)
+            VideoPlayer(player: AVPlayer(url: url))
+            Text("Timer")
+            Text("Start/Done button")
+            Text("Rating")
+            Text("Histroy Button")
+        }
     }
 }
 
 #Preview {
     ExerciseView(index:0)
 }
+
+

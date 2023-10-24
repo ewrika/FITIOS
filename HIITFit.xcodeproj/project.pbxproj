@@ -17,6 +17,8 @@
 		E8C3E27B2AE7C4C400CB56BF /* step-up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E8C3E2772AE7C4C400CB56BF /* step-up.mp4 */; };
 		E8C3E27C2AE7C4C400CB56BF /* squat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E8C3E2782AE7C4C400CB56BF /* squat.mp4 */; };
 		E8C3E27D2AE7C4C400CB56BF /* sun-salute.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E8C3E2792AE7C4C400CB56BF /* sun-salute.mp4 */; };
+		E8C3E27F2AE7FB3F00CB56BF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3E27E2AE7FB3E00CB56BF /* HeaderView.swift */; };
+		E8C3E2812AE7FE6400CB56BF /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3E2802AE7FE6400CB56BF /* Exercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		E8C3E2772AE7C4C400CB56BF /* step-up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "step-up.mp4"; sourceTree = "<group>"; };
 		E8C3E2782AE7C4C400CB56BF /* squat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = squat.mp4; sourceTree = "<group>"; };
 		E8C3E2792AE7C4C400CB56BF /* sun-salute.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sun-salute.mp4"; sourceTree = "<group>"; };
+		E8C3E27E2AE7FB3E00CB56BF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E8C3E2802AE7FE6400CB56BF /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		E8C3E2542AE7BC0700CB56BF /* My_First */ = {
 			isa = PBXGroup;
 			children = (
+				E8C3E2802AE7FE6400CB56BF /* Exercise.swift */,
 				E8C3E2552AE7BC0700CB56BF /* My_FirstApp.swift */,
 				E8C3E2672AE7BD3600CB56BF /* Views */,
 				E8C3E2592AE7BC0900CB56BF /* Assets.xcassets */,
@@ -88,6 +93,7 @@
 				E8C3E2792AE7C4C400CB56BF /* sun-salute.mp4 */,
 				E8C3E2572AE7BC0700CB56BF /* ContentView.swift */,
 				E8C3E2652AE7BCEF00CB56BF /* ExerciseView.swift */,
+				E8C3E27E2AE7FB3E00CB56BF /* HeaderView.swift */,
 				E8C3E2632AE7BCD200CB56BF /* WelcomeView.swift */,
 			);
 			path = Views;
@@ -167,10 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C3E27F2AE7FB3F00CB56BF /* HeaderView.swift in Sources */,
 				E8C3E2662AE7BCEF00CB56BF /* ExerciseView.swift in Sources */,
 				E8C3E2582AE7BC0700CB56BF /* ContentView.swift in Sources */,
 				E8C3E2642AE7BCD200CB56BF /* WelcomeView.swift in Sources */,
 				E8C3E2562AE7BC0700CB56BF /* My_FirstApp.swift in Sources */,
+				E8C3E2812AE7FE6400CB56BF /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,12 +320,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "testplay.My-First";
+				PRODUCT_BUNDLE_IDENTIFIER = "egg-orr.My-First";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,12 +350,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "testplay.My-First";
+				PRODUCT_BUNDLE_IDENTIFIER = "egg-orr.My-First";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
