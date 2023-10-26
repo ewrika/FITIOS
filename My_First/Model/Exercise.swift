@@ -9,7 +9,7 @@ import SwiftUI
 import Foundation
 
 struct Exercise {
-  let exerciseName: String
+  let titleText: String
   let videoName: String
 
   enum ExerciseEnum: String {
@@ -23,16 +23,16 @@ struct Exercise {
 extension Exercise {
   static let exercises = [
     Exercise(
-      exerciseName: ExerciseEnum.squat.rawValue,
+      titleText: ExerciseEnum.squat.rawValue,
       videoName: "squat"),
     Exercise(
-      exerciseName: ExerciseEnum.stepUp.rawValue,
+      titleText: ExerciseEnum.stepUp.rawValue,
       videoName: "step-up"),
     Exercise(
-      exerciseName: ExerciseEnum.burpee.rawValue,
+      titleText: ExerciseEnum.burpee.rawValue,
       videoName: "burpee"),
     Exercise(
-      exerciseName: ExerciseEnum.sunSalute.rawValue,
+      titleText: ExerciseEnum.sunSalute.rawValue,
       videoName: "sun-salute")
   ]
 }
