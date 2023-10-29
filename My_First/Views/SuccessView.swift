@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SuccessView: View {
+    @Environment(\.dismiss) var dismiss
+    @Binding var selectedTab : Int
     let message = """
     Good job completing all four exercisec!
     Remember tommorow's another day
@@ -30,7 +32,8 @@ struct SuccessView: View {
         
             VStack(){
                 Spacer()
-                Button(action: { }) {
+                Button(action: {dismiss()
+                    selectedTab=9}) {
                     Text("Continue")
                 }
             }
@@ -39,5 +42,5 @@ struct SuccessView: View {
 }
 
 #Preview {
-    SuccessView()
+    SuccessView(selectedTab:.constant(3)).presentationDetents([.medium,.large])
 }
