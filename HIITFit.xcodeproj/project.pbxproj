@@ -17,6 +17,7 @@
 		E89B7C092AEA540000360D57 /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89B7C082AEA540000360D57 /* HistoryStore.swift */; };
 		E89B7C0C2AEA55A400360D57 /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89B7C0B2AEA55A400360D57 /* HistoryStoreDevData.swift */; };
 		E89B7C0E2AEB03BD00360D57 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89B7C0D2AEB03BD00360D57 /* SuccessView.swift */; };
+		E8BD655F2AEE701400195C12 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BD655E2AEE701400195C12 /* TimerView.swift */; };
 		E8C3E2562AE7BC0700CB56BF /* My_FirstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3E2552AE7BC0700CB56BF /* My_FirstApp.swift */; };
 		E8C3E2582AE7BC0700CB56BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3E2572AE7BC0700CB56BF /* ContentView.swift */; };
 		E8C3E25A2AE7BC0900CB56BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C3E2592AE7BC0900CB56BF /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		E89B7C082AEA540000360D57 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
 		E89B7C0B2AEA55A400360D57 /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
 		E89B7C0D2AEB03BD00360D57 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		E8BD655E2AEE701400195C12 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		E8C3E2522AE7BC0700CB56BF /* HIITFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIITFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C3E2552AE7BC0700CB56BF /* My_FirstApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_FirstApp.swift; sourceTree = "<group>"; };
 		E8C3E2572AE7BC0700CB56BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				E89B7BFD2AEA4EC900360D57 /* step-up.mp4 */,
 				E89B7BFB2AEA4EC900360D57 /* sun-salute.mp4 */,
 				E8C3E2572AE7BC0700CB56BF /* ContentView.swift */,
+				E8BD655E2AEE701400195C12 /* TimerView.swift */,
 				E8C3E2652AE7BCEF00CB56BF /* ExerciseView.swift */,
 				E89B7C042AEA504700360D57 /* VideoPlayerView.swift */,
 				E89B7C022AEA4F2C00360D57 /* RatingView.swift */,
@@ -204,6 +207,7 @@
 				E8C3E2662AE7BCEF00CB56BF /* ExerciseView.swift in Sources */,
 				E89B7C092AEA540000360D57 /* HistoryStore.swift in Sources */,
 				E89B7C0E2AEB03BD00360D57 /* SuccessView.swift in Sources */,
+				E8BD655F2AEE701400195C12 /* TimerView.swift in Sources */,
 				E8C3E2582AE7BC0700CB56BF /* ContentView.swift in Sources */,
 				E8C3E2642AE7BCD200CB56BF /* WelcomeView.swift in Sources */,
 				E8C3E2562AE7BC0700CB56BF /* My_FirstApp.swift in Sources */,
