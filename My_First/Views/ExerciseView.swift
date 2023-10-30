@@ -18,7 +18,7 @@ struct ExerciseView: View {
         Exercise.exercises[index]
     }
     @Binding var selectedTab : Int
-    @State private var rating = 0
+
     let index : Int
     @State private var timerDone = false
     @State private var showTimer = false
@@ -72,8 +72,8 @@ struct ExerciseView: View {
                 
                 .font(.title3)
                 .padding()
-                
-                RatingView(rating: $rating)
+                //
+                RatingView(exerciseIndex:index)
                     .padding()
                 
                 Spacer()
