@@ -11,9 +11,10 @@ import SwiftUI
 struct My_FirstApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().onAppear {
+            ContentView()
+                .onAppear {
                 print(URL.documentsDirectory)
-              }
+            }
         }
     }
 }
