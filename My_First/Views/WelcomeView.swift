@@ -11,48 +11,45 @@ struct WelcomeView: View {
     @Binding var selectedTab: Int
     @State private var showHistory = false
     var body: some View {
-        
-        ZStack {
-            
-            VStack {
-                HStack(alignment: .bottom) {
-                    VStack(alignment: .leading) {
-                        
-                        Text("Get fit")
-                            .font(.largeTitle)
-                        Text("with high intensity interval training")
-                            .font(.headline)
-                        
-                    }
-                    Image("step-up")
-                        .frame(width: 240.0, height: 240.0)
-                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                    
+        GeometryReader { geometry in
+          VStack {
+            HeaderView(
+              selectedTab: $selectedTab,
+              titleText: "Welcome")
+            Spacer()
+            // container view
+            ContainerView {
+              ViewThatFits {
+                VStack {
+                  WelcomeView.images
+                  WelcomeView.welcomeText
+                  getStartedButton
+                  Spacer()
                 }
-                Button(action: { selectedTab = 0 }) {
-                    Text("Get Started")
-                    Image(systemName: "arrow.right.circle")
+                VStack {
+                  WelcomeView.welcomeText
+                  getStartedButton
+                  Spacer()
                 }
-                .font(.title2)
-                .padding()
-                .background(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .stroke(Color.gray,lineWidth: 2))
+              }
             }
-            
-            VStack {
-                
-                HeaderView(selectedTab: $selectedTab, titleText: "Welcome")
-                Spacer()
-                Button("Histroy"){showHistory.toggle()
-                }
-                .sheet(isPresented:$showHistory){
-                    HistoryView(showHistory:$showHistory)
-                }
-                .padding(.bottom)
-            }
-        }    }
+            .frame(height: geometry.size.height * 0.8)
+          }
+          .sheet(isPresented: $showHistory) {
+            HistoryView(showHistory: $showHistory)
+          }
+        }
+      }
+    
+    
+    var getStartedButton:some View{
+        RaisedButton(buttonText:"Get Started"){
+            selectedTab = 0
+        }
+        .padding()
+    }
 }
+
 
 #Preview {
     WelcomeView(selectedTab: .constant(9))

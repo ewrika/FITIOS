@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E82CED8F2AF416D7003D8D48 /* RaisedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82CED8E2AF416D7003D8D48 /* RaisedButton.swift */; };
+		E8549A972AF786E000D77B81 /* WelcomeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8549A962AF786E000D77B81 /* WelcomeImages.swift */; };
+		E8549A992AF78BB000D77B81 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8549A982AF78BB000D77B81 /* GradientBackground.swift */; };
+		E8772B322AF6320000CD2B4C /* EmbossedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8772B312AF6320000CD2B4C /* EmbossedButton.swift */; };
+		E8772B342AF6651D00CD2B4C /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8772B332AF6651D00CD2B4C /* ContainerView.swift */; };
 		E89B7BFE2AEA4EC900360D57 /* burpee.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E89B7BFA2AEA4EC800360D57 /* burpee.mp4 */; };
 		E89B7BFF2AEA4EC900360D57 /* sun-salute.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E89B7BFB2AEA4EC900360D57 /* sun-salute.mp4 */; };
 		E89B7C002AEA4EC900360D57 /* squat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E89B7BFC2AEA4EC900360D57 /* squat.mp4 */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E82CED8E2AF416D7003D8D48 /* RaisedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisedButton.swift; sourceTree = "<group>"; };
+		E8549A962AF786E000D77B81 /* WelcomeImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeImages.swift; sourceTree = "<group>"; };
+		E8549A982AF78BB000D77B81 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		E8772B312AF6320000CD2B4C /* EmbossedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossedButton.swift; sourceTree = "<group>"; };
+		E8772B332AF6651D00CD2B4C /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		E89B7BFA2AEA4EC800360D57 /* burpee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = burpee.mp4; sourceTree = "<group>"; };
 		E89B7BFB2AEA4EC900360D57 /* sun-salute.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sun-salute.mp4"; sourceTree = "<group>"; };
 		E89B7BFC2AEA4EC900360D57 /* squat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = squat.mp4; sourceTree = "<group>"; };
@@ -116,13 +126,18 @@
 				E89B7BFD2AEA4EC900360D57 /* step-up.mp4 */,
 				E89B7BFB2AEA4EC900360D57 /* sun-salute.mp4 */,
 				E8C3E2572AE7BC0700CB56BF /* ContentView.swift */,
+				E8772B332AF6651D00CD2B4C /* ContainerView.swift */,
+				E82CED8E2AF416D7003D8D48 /* RaisedButton.swift */,
 				E8BD655E2AEE701400195C12 /* TimerView.swift */,
 				E8C3E2652AE7BCEF00CB56BF /* ExerciseView.swift */,
+				E8772B312AF6320000CD2B4C /* EmbossedButton.swift */,
 				E89B7C042AEA504700360D57 /* VideoPlayerView.swift */,
 				E89B7C022AEA4F2C00360D57 /* RatingView.swift */,
 				E8C3E27E2AE7FB3E00CB56BF /* HeaderView.swift */,
 				E89B7C0D2AEB03BD00360D57 /* SuccessView.swift */,
 				E8C3E2632AE7BCD200CB56BF /* WelcomeView.swift */,
+				E8549A982AF78BB000D77B81 /* GradientBackground.swift */,
+				E8549A962AF786E000D77B81 /* WelcomeImages.swift */,
 				E89B7C062AEA512E00360D57 /* HistoryView.swift */,
 			);
 			path = Views;
@@ -203,18 +218,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E89B7C0C2AEA55A400360D57 /* HistoryStoreDevData.swift in Sources */,
+				E82CED8F2AF416D7003D8D48 /* RaisedButton.swift in Sources */,
+				E8772B322AF6320000CD2B4C /* EmbossedButton.swift in Sources */,
 				E8C3E27F2AE7FB3F00CB56BF /* HeaderView.swift in Sources */,
 				E8C3E2662AE7BCEF00CB56BF /* ExerciseView.swift in Sources */,
 				E89B7C092AEA540000360D57 /* HistoryStore.swift in Sources */,
 				E89B7C0E2AEB03BD00360D57 /* SuccessView.swift in Sources */,
+				E8549A972AF786E000D77B81 /* WelcomeImages.swift in Sources */,
 				E8BD655F2AEE701400195C12 /* TimerView.swift in Sources */,
 				E8C3E2582AE7BC0700CB56BF /* ContentView.swift in Sources */,
 				E8C3E2642AE7BCD200CB56BF /* WelcomeView.swift in Sources */,
 				E8C3E2562AE7BC0700CB56BF /* My_FirstApp.swift in Sources */,
 				E8C3E2812AE7FE6400CB56BF /* Exercise.swift in Sources */,
+				E8772B342AF6651D00CD2B4C /* ContainerView.swift in Sources */,
 				E89B7C032AEA4F2C00360D57 /* RatingView.swift in Sources */,
 				E89B7C072AEA512E00360D57 /* HistoryView.swift in Sources */,
 				E89B7C052AEA504700360D57 /* VideoPlayerView.swift in Sources */,
+				E8549A992AF78BB000D77B81 /* GradientBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +363,7 @@
 		E8C3E2612AE7BC0900CB56BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -373,7 +393,7 @@
 		E8C3E2622AE7BC0900CB56BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
