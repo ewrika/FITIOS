@@ -31,6 +31,7 @@ struct WelcomeView: View {
                   getStartedButton
                   Spacer()
                 }
+                  
               }
             }
             .frame(height: geometry.size.height * 0.8)
@@ -38,6 +39,7 @@ struct WelcomeView: View {
           .sheet(isPresented: $showHistory) {
             HistoryView(showHistory: $showHistory)
           }
+
         }
       }
     
@@ -47,7 +49,20 @@ struct WelcomeView: View {
             selectedTab = 0
         }
         .padding()
+        
     }
+    
+    var getHistory:some View{
+        VStack{
+            RaisedButton(buttonText: "Histroy"){ showHistory.toggle()
+            }.padding([.horizontal], 150)
+            .sheet(isPresented:$showHistory){
+                HistoryView(showHistory:$showHistory)
+            }.padding(.bottom)
+
+        }
+    }
+    
 }
 
 

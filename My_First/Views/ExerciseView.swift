@@ -78,10 +78,15 @@ struct ExerciseView: View {
                             .padding()
                         
                         Spacer()
-                        Button("History") { showHistory.toggle()
-                        }.sheet(isPresented:$showHistory){
+                        RaisedButton(buttonText: "Histroy"){ showHistory.toggle()
+                        }.padding([.horizontal], 150)
+                        .sheet(isPresented:$showHistory){
                             HistoryView(showHistory:$showHistory)
                         }
+                       
+                        
+                        
+                        
                         .padding(.bottom)
                     }.frame(height: geometry.size.height * 0.35)
                 }
