@@ -12,36 +12,36 @@ struct WelcomeView: View {
     @State private var showHistory = false
     var body: some View {
         GeometryReader { geometry in
-          VStack {
-            HeaderView(
-              selectedTab: $selectedTab,
-              titleText: "Welcome")
-            Spacer()
-            // container view
-            ContainerView {
-              ViewThatFits {
-                VStack {
-                  WelcomeView.images
-                  WelcomeView.welcomeText
-                  getStartedButton
-                  Spacer()
+            VStack {
+                HeaderView(
+                    selectedTab: $selectedTab,
+                    titleText: "Welcome")
+                Spacer()
+                // container view
+                ContainerView {
+                    ViewThatFits {
+                        VStack {
+                            WelcomeView.images
+                            WelcomeView.welcomeText
+                            getStartedButton
+                            Spacer()
+                        }
+                        VStack {
+                            WelcomeView.welcomeText
+                            getStartedButton
+                            Spacer()
+                        }
+                        
+                    }
                 }
-                VStack {
-                  WelcomeView.welcomeText
-                  getStartedButton
-                  Spacer()
-                }
-                  
-              }
+                .frame(height: geometry.size.height * 0.8)
             }
-            .frame(height: geometry.size.height * 0.8)
-          }
-          .sheet(isPresented: $showHistory) {
-            HistoryView(showHistory: $showHistory)
-          }
-
+            .sheet(isPresented: $showHistory) {
+                HistoryView(showHistory: $showHistory)
+            }
+            
         }
-      }
+    }
     
     
     var getStartedButton:some View{
@@ -56,10 +56,10 @@ struct WelcomeView: View {
         VStack{
             RaisedButton(buttonText: "Histroy"){ showHistory.toggle()
             }.padding([.horizontal], 150)
-            .sheet(isPresented:$showHistory){
-                HistoryView(showHistory:$showHistory)
-            }.padding(.bottom)
-
+                .sheet(isPresented:$showHistory){
+                    HistoryView(showHistory:$showHistory)
+                }.padding(.bottom)
+            
         }
     }
     

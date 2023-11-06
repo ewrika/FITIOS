@@ -91,8 +91,7 @@ struct ExerciseView: View {
                     }.frame(height: geometry.size.height * 0.35)
                 }
             }
-        }
-    }
+        }    }
 }
 #Preview {
     ExerciseView(selectedTab: .constant(3), index: 3)
