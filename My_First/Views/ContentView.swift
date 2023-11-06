@@ -25,6 +25,7 @@ struct ContentView: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             
+            
         }
 
     }
